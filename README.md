@@ -17,46 +17,72 @@ A simple full-stack application that converts text (typed or uploaded) into spok
 
 1. Navigate to the `backend` directory:
 
-```bash
-cd backend
-Install dependencies:
+  ```bash
+  cd backend
+  ```
 
-bash
-Copy
-Edit
-npm install
-(Optional) Create a .env file to set the port (defaults to 5000):
+2.Install dependencies:
 
-ini
-Copy
-Edit
-PORT=5000
-Run the server:
+  ```bash
+  npm install
+  ```
+    
+3. (Optional) Create a .env file to set the port (defaults to 5000):
 
-bash
-Copy
-Edit
-node server.js
+ ```bash
+ PORT=5000
+ ```
+    
+4. Run the server:
+
+ ```bash
+ node server.js
+ ```
+
 Server will start on http://localhost:5000.
 
 ### Frontend Setup
-If you have a frontend:
+  
+1. Navigate to the frontend directory:
+  
+ ```bash
+ cd frontend
+ ```
 
-Navigate to the frontend directory:
+2. Install dependencies:
+  
+  ```bash
+  npm install
+  ```
+  
+3. Start the development server:
 
-bash
-Copy
-Edit
-cd frontend
-Install dependencies:
+ ```bash
+ npm start
+ ```
 
-bash
-Copy
-Edit
-npm install
-Start the development server:
+## ✅ Pros
 
-bash
-Copy
-Edit
-npm start
+| Advantage | Description |
+|-----------|-------------|
+| **Free to use** | No API key or payment required. |
+| **Easy to set up** | Lightweight and simple integration in Node.js or Python. |
+| **Supports many languages** | Covers most Google Translate-supported languages. |
+| **Fast response time** | Audio is streamed almost instantly for short texts. |
+| **No need for external services** | No cloud platform setup required (unlike Google Cloud TTS).
+
+---
+
+## ❌ Cons
+
+| Limitation | Description |
+|------------|-------------|
+| **Unofficial API** | Uses a non-public Google endpoint that may change or break without notice. |
+| **Rate limited** | Excessive or automated use may result in IP blocking or throttling. |
+| **No voice customization** | You can't change voice, pitch, speed, or gender. |
+| **Limited to online use** | Requires internet access — no offline speech generation. |
+| **Limited error handling** | Less graceful handling of very long or malformed text.
+
+---
+
+
